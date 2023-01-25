@@ -19,3 +19,7 @@ Tampilan Register
 ![Tampilan Register](markdown_asset/Web%20capture_25-1-2023_13190_127.0.0.1.jpeg)
 Tampilan Dashboard
 ![Tampilan Dashboard](markdown_asset/Web%20capture_25-1-2023_132032_127.0.0.1.jpeg)
+
+## Contributing
+
+Terima kasih telah berkenan untuk berkontribusi dalam pengembangan Starter Code ini. Jika anda berkenan dalam melakukan kontribusi maka anda dapat menghubungi pemilik melalui [Instagram](instagram.com/ehjohan12)
