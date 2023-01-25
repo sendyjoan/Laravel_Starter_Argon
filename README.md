@@ -22,4 +22,4 @@ Tampilan Dashboard
 
 ## Contributing
 
-Terima kasih telah berkenan untuk berkontribusi dalam pengembangan Starter Code ini. Jika anda berkenan dalam melakukan kontribusi maka anda dapat menghubungi pemilik melalui [Instagram](instagram.com/ehjohan12)
+Terima kasih telah berkenan untuk berkontribusi dalam pengembangan Starter Code ini. Jika anda berkenan dalam melakukan kontribusi maka anda dapat menghubungi pemilik melalui [Instagram](https://www.instagram.com/ehjohan12)
