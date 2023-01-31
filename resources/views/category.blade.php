@@ -130,7 +130,7 @@
           <div class="modal-body">
             <div class="py-3 text-center">
               <i class="ni ni-bell-55 ni-3x"></i>
-              <h4 class="text-gradient text-danger mt-4">Are you sure to delete <b>{{$delete->category_name}}</b></h4>
+              <h4 class="text-gradient text-danger mt-4">Are you sure to delete <br> <b>{{$delete->category_name}}</b></h4>
               <p>The data you have deleted cannot be restored in any way.</p>
             </div>
           </div>
