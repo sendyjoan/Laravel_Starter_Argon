@@ -23,6 +23,13 @@
                 </thead>
                 
                 <tbody>
+                  @if($categories->count() == 0)
+                    <tr class="text-center text-uppercase text-secondary text-xxs font-weight-bolder opacity-7">
+                      <td colspan=4>
+                        <label for="">No data available</label>
+                      </td>
+                    </tr>
+                  @endif
                   @foreach ($categories as $category)
                   <tr>
                     <td>
@@ -51,6 +58,7 @@
                     </td>
                   </tr>
                   @endforeach
+                  
                 </tbody>
               </table>
             </div>

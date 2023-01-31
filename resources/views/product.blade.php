@@ -24,6 +24,13 @@
                   </tr>
                 </thead>
                 <tbody>
+                  @if($products->count() == 0)
+                    <tr class="text-center text-uppercase text-secondary text-xxs font-weight-bolder opacity-7">
+                      <td colspan=6>
+                        <label for="">No data available</label>
+                      </td>
+                    </tr>
+                  @endif
                   @foreach ($products as $item)
                   <tr>
                     <td>
