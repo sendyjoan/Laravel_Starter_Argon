@@ -16,19 +16,18 @@ use App\Http\Controllers\CategoryController;
 | contains the "web" middleware group. Now create something great!
 |
 */
-
-Route::get('/', function () {
-    return view('auth.login');
-});
-
 Auth::routes();
 
-Route::resource('categories', CategoryController::class);
-Route::resource('products', ProductController::class);
+Route::group(['middleware' => ['auth', 'rolecheck:2,1']], function() {
+    Route::resource('categories', CategoryController::class);
+    Route::resource('products', ProductController::class);
 
-Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
+    Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
+    Route::get('/', [App\Http\Controllers\HomeController::class, 'index']);
+});
 
-Route::get('/users', function () {
-    return view('user');
-})->name('user');
-
+Route::group(['middleware' => ['auth', 'rolecheck:1']], function() {
+    Route::get('/users', function () {
+        return view('user');
+    })->name('user');
+});

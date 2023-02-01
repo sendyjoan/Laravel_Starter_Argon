@@ -57,14 +57,6 @@
           </a>
         </li>
         <li class="nav-item">
-          <a class="nav-link " href="{{ route('user') }}">
-            <div class="icon icon-shape icon-sm border-radius-md text-center me-2 d-flex align-items-center justify-content-center">
-              <i class="ni ni-calendar-grid-58 text-warning text-sm opacity-10"></i>
-            </div>
-            <span class="nav-link-text ms-1">User List</span>
-          </a>
-        </li>
-        <li class="nav-item">
           <a class="nav-link " href="{{ route('products.index') }}">
             <div class="icon icon-shape icon-sm border-radius-md text-center me-2 d-flex align-items-center justify-content-center">
               <i class="ni ni-calendar-grid-58 text-warning text-sm opacity-10"></i>
@@ -81,6 +73,28 @@
           </a>
         </li>
         
+        @if (Auth::user()->role_id == 1)
+          <li class="nav-item mt-3">
+            <h6 class="ps-4 ms-2 text-uppercase text-xs font-weight-bolder opacity-6">Super Admin pages</h6>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link " href="../pages/profile.html">
+              <div class="icon icon-shape icon-sm border-radius-md text-center me-2 d-flex align-items-center justify-content-center">
+                <i class="ni ni-check-bold text-dark text-sm opacity-10"></i>
+              </div>
+              <span class="nav-link-text ms-1">Role List</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link " href="{{ route('user') }}">
+              <div class="icon icon-shape icon-sm border-radius-md text-center me-2 d-flex align-items-center justify-content-center">
+                <i class="ni ni-calendar-grid-58 text-warning text-sm opacity-10"></i>
+              </div>
+              <span class="nav-link-text ms-1">User List</span>
+            </a>
+          </li>
+        @endif
+
         <li class="nav-item mt-3">
           <h6 class="ps-4 ms-2 text-uppercase text-xs font-weight-bolder opacity-6">Account pages</h6>
         </li>
